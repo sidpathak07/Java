@@ -48,6 +48,21 @@ public class Client {
 		
 		//we can use multiple functions like filter, map and limit in single use which runs parallel
 		//and optimizes the result
+		
+		List<String> sentences = Arrays.asList(
+                "Python is a programming language.",
+                "JavaScript is used for web development.",
+                "Ruby is known for its simplicity."
+        );
+		
+		List<String> stringList= 
+		sentences.stream()
+		.filter(sentence->{
+			return !sentence.contains("Java");
+		})
+		.flatMap(sentence->Arrays.stream(sentence.split(" "))).collect(Collectors.toList());
+		
+		System.out.println(stringList);
 	}
 
 }
