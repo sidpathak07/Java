@@ -1,8 +1,8 @@
 package Generics;
 
-import java.security.PublicKey;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Client {
 
@@ -27,6 +27,9 @@ public class Client {
 		for(Animal animal:animals) {
 			animal.eat();
 		}
-	}
-
+		Scanner scanner = new Scanner(System.in);
+		scanner.next();
+		}
 }
+
+
