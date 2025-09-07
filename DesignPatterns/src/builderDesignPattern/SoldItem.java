@@ -14,6 +14,9 @@ public class SoldItem {
 		// TODO Auto-generated constructor stub
 	}
 
+	public static SoldItemBuilder getBuilder() {
+		return new SoldItemBuilder();
+	}
 	public String getName() {
 		return name;
 	}

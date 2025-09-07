@@ -11,31 +11,39 @@ public class SoldItemBuilder {
 		return price;
 	}
 
-	public void setPrice(double price) {
+	public SoldItemBuilder setPrice(double price) {
 		this.price = price;
+		return this;
 	}
 
 	public String getName() {
 		return name;
 	}
 
-	public void setName(String name) {
+	public SoldItemBuilder setName(String name) {
 		this.name = name;
+		return this;
 	}
 
 	public boolean isPrime() {
 		return isPrime;
 	}
 
-	public void setPrime(boolean isPrime) {
+	public SoldItemBuilder setPrime(boolean isPrime) {
 		this.isPrime = isPrime;
+		return this;
 	}
 
 	public int getQuantity() {
 		return quantity;
 	}
 
-	public void setQuantity(int quantity) {
+	public SoldItemBuilder setQuantity(int quantity) {
 		this.quantity = quantity;
+		return this;
+	}
+	
+	public SoldItem build() {
+		return new SoldItem(this);
 	}
 }
