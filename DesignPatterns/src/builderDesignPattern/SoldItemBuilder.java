@@ -43,7 +43,7 @@ public class SoldItemBuilder {
 		return this;
 	}
 	
-	public SoldItem build() {
+	/*public SoldItem build() {
 		return new SoldItem(this);
-	}
+	}*/
 }
