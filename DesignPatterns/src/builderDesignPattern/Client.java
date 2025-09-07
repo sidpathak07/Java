@@ -20,6 +20,7 @@ public class Client {
 							.setQuantity(5)
 							.build();
 		
+		
 		System.out.println(soldItem.getName()+" "+soldItem.getPrice());
 	}
 
