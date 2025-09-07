@@ -22,6 +22,17 @@ public class Client {
 		
 		
 		System.out.println(soldItem.getName()+" "+soldItem.getPrice());
+		
+		MessageBuilder msgBuilder = MessageBuilder
+									.getBuilder()
+									.setContent("Text")
+									.setDelivered(false)
+									.setMessageType(MessageType.TEXT)
+									.setRecipient("Sid")
+									.setSender("Harsh")
+									.setTimestamp(15)
+									.build();
+		System.out.println(msgBuilder.getSender());
 	}
 
 }
